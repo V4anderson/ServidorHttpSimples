@@ -1,0 +1,14 @@
+c:\Users\Vandeson\Desktop\ServidorHttpSimples\bin\Debug\net8.0\ServidorHttpSimples.exe
+c:\Users\Vandeson\Desktop\ServidorHttpSimples\bin\Debug\net8.0\ServidorHttpSimples.deps.json
+c:\Users\Vandeson\Desktop\ServidorHttpSimples\bin\Debug\net8.0\ServidorHttpSimples.runtimeconfig.json
+c:\Users\Vandeson\Desktop\ServidorHttpSimples\bin\Debug\net8.0\ServidorHttpSimples.dll
+c:\Users\Vandeson\Desktop\ServidorHttpSimples\bin\Debug\net8.0\ServidorHttpSimples.pdb
+c:\Users\Vandeson\Desktop\ServidorHttpSimples\obj\Debug\net8.0\ServidorHttpSimples.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Vandeson\Desktop\ServidorHttpSimples\obj\Debug\net8.0\ServidorHttpSimples.AssemblyInfoInputs.cache
+c:\Users\Vandeson\Desktop\ServidorHttpSimples\obj\Debug\net8.0\ServidorHttpSimples.AssemblyInfo.cs
+c:\Users\Vandeson\Desktop\ServidorHttpSimples\obj\Debug\net8.0\ServidorHttpSimples.csproj.CoreCompileInputs.cache
+c:\Users\Vandeson\Desktop\ServidorHttpSimples\obj\Debug\net8.0\ServidorHttpSimples.dll
+c:\Users\Vandeson\Desktop\ServidorHttpSimples\obj\Debug\net8.0\refint\ServidorHttpSimples.dll
+c:\Users\Vandeson\Desktop\ServidorHttpSimples\obj\Debug\net8.0\ServidorHttpSimples.pdb
+c:\Users\Vandeson\Desktop\ServidorHttpSimples\obj\Debug\net8.0\ServidorHttpSimples.genruntimeconfig.cache
+c:\Users\Vandeson\Desktop\ServidorHttpSimples\obj\Debug\net8.0\ref\ServidorHttpSimples.dll
