@@ -12,3 +12,4 @@ c:\Users\Vandeson\Desktop\ServidorHttpSimples\obj\Debug\net8.0\refint\ServidorHt
 c:\Users\Vandeson\Desktop\ServidorHttpSimples\obj\Debug\net8.0\ServidorHttpSimples.pdb
 c:\Users\Vandeson\Desktop\ServidorHttpSimples\obj\Debug\net8.0\ServidorHttpSimples.genruntimeconfig.cache
 c:\Users\Vandeson\Desktop\ServidorHttpSimples\obj\Debug\net8.0\ref\ServidorHttpSimples.dll
+C:\Users\Vandeson\Desktop\ServidorHttpSimples\obj\Debug\net8.0\ServidorHttpSimples.sourcelink.json

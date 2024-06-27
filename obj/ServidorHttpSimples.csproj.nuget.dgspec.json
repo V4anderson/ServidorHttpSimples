@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vandeson\\Desktop\\ServidorHttpSimples\\ServidorHttpSimples.csproj": {}
+    "c:\\Users\\Vandeson\\Desktop\\ServidorHttpSimples\\ServidorHttpSimples.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vandeson\\Desktop\\ServidorHttpSimples\\ServidorHttpSimples.csproj": {
+    "c:\\Users\\Vandeson\\Desktop\\ServidorHttpSimples\\ServidorHttpSimples.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vandeson\\Desktop\\ServidorHttpSimples\\ServidorHttpSimples.csproj",
+        "projectUniqueName": "c:\\Users\\Vandeson\\Desktop\\ServidorHttpSimples\\ServidorHttpSimples.csproj",
         "projectName": "ServidorHttpSimples",
-        "projectPath": "C:\\Users\\Vandeson\\Desktop\\ServidorHttpSimples\\ServidorHttpSimples.csproj",
+        "projectPath": "c:\\Users\\Vandeson\\Desktop\\ServidorHttpSimples\\ServidorHttpSimples.csproj",
         "packagesPath": "C:\\Users\\Vandeson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vandeson\\Desktop\\ServidorHttpSimples\\obj\\",
+        "outputPath": "c:\\Users\\Vandeson\\Desktop\\ServidorHttpSimples\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vandeson\\AppData\\Roaming\\NuGet\\NuGet.Config",
