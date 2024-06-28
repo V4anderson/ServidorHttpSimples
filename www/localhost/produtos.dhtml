@@ -9,6 +9,7 @@
 <body>
     <h1>Listagem de Produtos</h1>
     <hr>
+    <a href="cadastroproduto.dhtml">Cadastrar Novo Produto</a>
     <table>
         <tr>
             <td>Codigo</td>

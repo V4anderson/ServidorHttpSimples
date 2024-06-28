@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+    <form method="post">
+        <label for="">
+            Codigo
+            <input type="text" name="codigo" id="codigo">
+        </label>
+        <label for="">
+            <input type="text" name="produto" id="produto">
+        </label>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

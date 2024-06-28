@@ -1,6 +1,7 @@
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Web;
 
 class ServidorHttp 
 {
@@ -69,6 +70,19 @@ class ServidorHttp
                     string textoParametros = recursoBuscado.Contains("?") ?
                         recursoBuscado.Split("?")[1] : "";
                     SortedList<string, string> parametros = ProcessarParametros(textoParametros);
+                    string dadosPost = textoRequisicao.Contains("\r\n\r\n") ?
+                        textoRequisicao.Split("\r\n\r\n")[1] : "";
+                    if(!string.IsNullOrEmpty(dadosPost)) 
+                    {
+                        dadosPost = HttpUtility.UrlDecode(dadosPost, Encoding.UTF8);
+                        var parametrosPost = ProcessarParametros(dadosPost); 
+                        foreach(var pp in parametrosPost)
+                        parametros.Add(pp.Key, pp.Value);
+                    }
+                    else 
+                    {
+
+                    }
                     recursoBuscado = recursoBuscado.Split("?")[0];
                     string versaoHttp = linhas[0].Substring(iSegundoEspaco + 1);
                     iPrimeiroEspaco = linhas[1].IndexOf(' ');
