@@ -83,7 +83,7 @@ class ServidorHttp
                         {
                             if(fiArquivo.Extension.ToLower() == ".dhtml")
                             {
-                            bytesConteudo = GerarHTMLDinamico(fiArquivo.FullName, parametros);
+                            bytesConteudo = GerarHTMLDinamico(fiArquivo.FullName, parametros ,metodoHttp);
                             }
                             else
                             {
@@ -158,33 +158,23 @@ public string ObterCaminhoFisicoArquivo(string host, string arquivo)
         return caminhoArquivo;
     }
 
-public  byte[] GerarHTMLDinamico(string caminhoArquivo, SortedList<string, string> parametros)
+public  byte[] GerarHTMLDinamico(string caminhoArquivo, SortedList<string, string> parametros, string metodoHttp)
 {
-    string coringa = "{{HtmlGerado}}";
-    string HtmlModelo = File.ReadAllText(caminhoArquivo);
-    StringBuilder HtmlGerado = new StringBuilder();
-    // HtmlGerado.Append("<ul>");
-    // foreach(var tipo in this.TiposMime.Keys)
-    // {
-    //     HtmlGerado.Append($"<li>Arquivos com extensão {tipo} </li>");
-    // }
-    // HtmlGerado.Append("/<ul>");
-    if(parametros.Count > 0) 
+    FileInfo fiArquivo = new FileInfo(caminhoArquivo);
+    string nomeClassePagina = "Pagina" + fiArquivo.Name.Replace(fiArquivo.Extension, "");
+    Type tipoPaginaDinamica = Type.GetType(nomeClassePagina, true, true);
+    PaginaDinamica pd = Activator.CreateInstance(tipoPaginaDinamica) as PaginaDinamica;
+    pd.HtmlModelo = File.ReadAllText(caminhoArquivo);   
+    switch(metodoHttp.ToLower())
     {
-        HtmlGerado.Append("<ul>");
-        foreach(var p in parametros)
-        {
-            HtmlGerado.Append($"<li>{p.Key}={p.Value}</li>");
-        }
-        HtmlGerado.Append("<ul>");
+        case "get":
+            return pd.Get(parametros);
+        case "post":
+            return pd.Post(parametros);
+        default:
+            return new byte[0];
     }
-    else
-    {
-        HtmlGerado.Append("<p>Nem um parâmetro foi passado</p>");
-    }
-    string TextoHtmlGerado = HtmlModelo.Replace(coringa, HtmlGerado.ToString());
-    return Encoding.UTF8.GetBytes(TextoHtmlGerado, 0, TextoHtmlGerado.Length);
-}
+ }
 private SortedList<string, string> ProcessarParametros(string textoParametros)
     {
         SortedList<string, string> parametros = new SortedList<string, string>();
